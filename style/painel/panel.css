@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&family=Raleway:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --mcolor: rgb(255, 94, 0);
+  --scolor: rgb(10, 10, 19);
+  --textcolor: white;
+  --gap: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: rgb(10, 10, 19);
+}
+body .cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--scolor);
+  width: 100%;
+  margin-top: -20px;
+  padding: 3rem;
+  color: var(--textcolor);
+  z-index: 100;
+  position: fixed;
+  border-bottom: 1px solid var(--mcolor);
+}
+body .cabecalho header {
+  font-size: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+body .cabecalho header img {
+  display: flex;
+  position: absolute;
+  top: -5px;
+  width: 200px;
+  margin-bottom: -50px;
+}
+body .cabecalho nav {
+  width: 100%;
+}
+body .cabecalho nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .cabecalho nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+body .cabecalho nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--textcolor);
+  font-family: "Raleway", sans-serif;
+  transition: 0.5s;
+  position: relative;
+}
+body .cabecalho nav ul li a::after {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+body .cabecalho nav ul li a:hover::after {
+  width: 100%;
+}
+body .spacing {
+  width: 100%;
+  height: 15vh;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 180vh;
+}
+body main section {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+body main section .grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+  height: 100%;
+  margin: 20px;
+}
+body main section .grid .card {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(78, 78, 78, 0.048);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  margin: 30px;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+body main section .grid .card .excluir {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-family: "Raleway", sans-serif;
+}
+body main section .grid .card .title {
+  font-size: 30px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+body main section .grid .card p {
+  font-size: 15px;
+  color: white;
+  margin-top: -20px;
+  font-family: "Raleway", sans-serif;
+}
+body main section .grid .card figure {
+  display: flex;
+  width: 220px;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+body main section .grid .card figure .imgproduto {
+  width: 200px;
+  height: 120px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
+}
+body main section .grid .card figure .adc {
+  width: 150px;
+  height: 150px;
+  filter: opacity(90%);
+}
+body main section .grid .card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--scolor);
+  color: white;
+  border-top: 1px solid var(--mcolor);
+}/*# sourceMappingURL=panel.css.map */
